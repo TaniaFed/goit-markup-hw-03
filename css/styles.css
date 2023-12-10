@@ -124,9 +124,6 @@ header {
 
 .header-logo .accent {
     color:#2e2f42;
-    font-family: "Raleway", sans-serif;
-    line-height: 1.6;
-    font-size: 18;
 }
 
 .header-contact-link {
@@ -234,6 +231,7 @@ header {
 .chars-items {
     width: 264px;
     margin-bottom: 8px;
+    width: calc((100% - 72px) / 4);
 }
 
 .text-characteristics {
@@ -276,6 +274,7 @@ header {
     color: #434455;
     letter-spacing: 0.02em;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 
 .team-member {
@@ -320,8 +319,10 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
     margin-bottom: 8px;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
 }
 
 /* Footer */
@@ -347,9 +348,6 @@ header {
 
 .footer-logo .accent {
     color: #f4f4fd;
-    font-family: "Raleway" sans-serif;
-    line-height: 1.6;
-    font-size: 18;
 }
 
 .footer-text {
