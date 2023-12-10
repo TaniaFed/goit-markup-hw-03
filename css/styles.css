@@ -100,6 +100,13 @@ header {
     color: #4d5ae5;
 }
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-logo-nav {
+    align-items: center;
+}
+
 .header-logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -168,11 +175,10 @@ header {
     font-size: 56px;
     text-align: center;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .main-button {
@@ -194,6 +200,9 @@ header {
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .main-button:hover,
@@ -238,6 +247,7 @@ header {
 .team-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .team-text {
@@ -265,6 +275,7 @@ header {
     background: #FFFFFF;
     color: #434455;
     letter-spacing: 0.02em;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member {
@@ -284,6 +295,7 @@ header {
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .photo-text {
@@ -309,6 +321,7 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 /* Footer */
