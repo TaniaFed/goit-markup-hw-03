@@ -23,6 +23,20 @@ ul {
 }
   
 /* Common stiles */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -36,6 +50,7 @@ section {
 
 img {
     display: block;
+    max-width: 100%;
     height: auto;
 }
 
@@ -188,6 +203,7 @@ header {
     padding: 16px 32px;
     margin: auto;
 }
+/* Next section */
 
 .company-characteristics {
     color: #2E2F42;
@@ -196,12 +212,37 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     background: #FFF;
+    margin-bottom: 8px;
+}
+
+.chars-list {
+    display: flex;
+    gap: 24px;
+    /* justify-content: center; */
+    flex-direction: row;
+}
+
+.chars-items {
+    width: 264px;
+    margin-bottom: 8px;
 }
 
 .text-characteristics {
     color: #434455;
     background: #FFF;
     letter-spacing: 0.02em;
+}
+
+/* Our team section */
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-text {
+    text-align: center;
+    padding: 32px 0;
 }
 
 .team-portfolio {
@@ -233,7 +274,24 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     background: #FFFFFF;
+    margin-bottom: 8px;
 }
+
+/* Our potrfolio section */
+
+.portfolio-list {
+    display: inline-block;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-text {
+    text-align: start;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;}
+
 .our-team-position {
     letter-spacing: 0.02em;
 }
@@ -250,10 +308,14 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
+
+/* Footer */
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -265,6 +327,9 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+
 }
 
 .footer-logo .accent {
@@ -277,4 +342,7 @@ header {
 .footer-text {
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    display: block;
+    width: 264px;
+    flex-wrap: wrap;
 }
